@@ -26,5 +26,31 @@
  * 10
  * 44
  */
+//todo 2 test cases failed
 public class Problem2 {
+  public static void main(String[] args) {
+    //Scanner in = new Scanner(System.in);
+    //int n = in.nextInt();
+    //for (int i = 0; i < n; i++) {
+    long sum = sumOfEvenFibbonacci(100);
+    System.out.println(sum);
+    //}
+  }
+
+  private static long sumOfEvenFibbonacci(int input) {
+    long sum = 0;
+    int n = 0;
+    int fn = 0;
+    int fn1 = 1;
+    while (fn1 < input) {
+      int temp = fn1 + fn;
+      fn = fn1;
+      fn1 = temp;
+      System.out.println(fn1);
+      if (fn % 2 == 0) {
+        sum += fn;
+      }
+    }
+    return sum;
+  }
 }
