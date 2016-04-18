@@ -39,7 +39,6 @@ public class Problem10 {
       primeMap.put(j, false);
     }
 
-
     for (int j = 2; j < i / 2; j++) {
 
     }
